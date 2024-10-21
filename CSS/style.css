@@ -249,7 +249,7 @@ html{
         font-size: 20px;
     }
     button{
-        background-image: url(img/button.png);
+        background-image: url(../img/button.png);
        background-size:cover;
        background-color: transparent;
        /* background-position: center; */
