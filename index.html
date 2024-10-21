@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"  />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet"> 
+    <title>Ecommerece</title>
+</head>
+<body>
+  <!-- start Header -->
+
+  <section class = 'header'>
+    <a href="index.html"><img src="img/logo.png" alt=""></a>
+    <ul class="navbar">
+      <a  class ='close'><i class="fa-solid fa-x"></i></a>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">contact</a></li>
+      <li class="cart"><a href="cart.html"><i class="fa-duotone fa-solid fa-bag-shopping"></i>
+        <span class="cart-count">3</span>
+      </a></li>
+      
+
+  </ul>
+  <div class="mobile">
+    
+     <i class= 'fas fa-outdent'></i>
+     <a class="cart" href="cart.html"><i class="fa-duotone fa-solid fa-bag-shopping"></i>
+      <span class="cart-count">3</span>
+    </a></li>
+     
+    </div>
+    
+
+  </section>
+
+  <!-- End Header -->
+
+  <!-- Start Hero -->
+
+  <section class="hero">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide-1" style="background-image: url(img/hero4.png);">
+          <h4>Trade-in-Offer</h4>
+          <h2>Super Value deals</h2>
+          <h1>On All Products</h1>
+          <p>Save more with coupons & up to 70% off!</p>
+          <a href="shop.html"><button>Shop Now</button></a>
+        </div>
+        <div class="swiper-slide swiper-slide-2" style="background-image: url(img/Fashion_Stakes_Web_2_2600x.webp);">
+          <h4>Trade-in-Offer</h4>
+          <h2>Super Value deals</h2>
+          <h1>On All Products</h1>
+          <p>Save more with coupons & up to 70% off!</p>
+          <a href="shop.html"><button>Shop Now</button></a>
+        </div>
+        <div class="swiper-slide swiper-slide-3" style="background-image: url(img/How-to-start-a-clothing-business.jpg.webp)">
+          <h4>Trade-in-Offer</h4>
+    <h2>Super Value deals</h2>
+    <h1>On All Products</h1>
+    <p>Save more with coupons & up to 70% off!</p>
+    <a href="shop.html"><button>Shop Now</button></a>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+   
+    
+  </section>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".swiper-container", {
+        
+    
+        pagination:{
+            el:'swiper-pagination'
+        },
+  
+        
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+  
+        
+    });
+  </script>
+
+<!-- End Hero -->
+
+<!-- Start Features -->
+
+<section class = 'features'>
+  <div class="fa-photo"><img src="img/features/f1.png" alt=""><span>Free Shipping</span></div>
+  <div class="fa-photo"><img src="img/features/f2.png" alt=""><span>Online Order</span></div>
+  <div class="fa-photo"><img src="img/features/f3.png" alt=""><span>Save Money</span></div>
+  <div class="fa-photo"><img src="img/features/f4.png" alt=""><span>Promtions</span></div>
+  <div class="fa-photo"><img src="img/features/f5.png" alt=""><span>Happy Sell</span></div>
+  <div class="fa-photo"><img src="img/features/f6.png" alt=""><span>F24/7 Support</span></div>
+</section>
+
+ <!-- End Features -->
+
+ <!-- Start Products -->
+  <section class="products">
+    <div class="summer">
+    <h1>Featured Products</h1>
+    <p>Summer Collection New Modern Design</p></div>
+    <div class="pro-shirt"onclick="window.location.href = 'sproduct.html';"><img src="img/products/f1.jpg" alt="" ><p>adidas</p><h3>Cartoon Astronaut T-shirts</h3><div class="stars"></div><div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div></div>
+    <div class="pro-shirt" onclick="window.location.href = 'sproduct.html';"><img src="img/products/f2.jpg" alt=""><p>adidas</p><h3>Cartoon Astronaut T-shirts</h3><div class="stars"></div><div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div></div>
+    <div class="pro-shirt"onclick="window.location.href = 'sproduct.html';"><img src="img/products/f3.jpg" alt=""><p>adidas</p><h3>Cartoon Astronaut T-shirts</h3><div class="stars"></div><div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div></div>
+    <div class="pro-shirt"onclick="window.location.href = 'sproduct.html';"><img src="img/products/f4.jpg" alt=""><p>adidas</p><h3>Cartoon Astronaut T-shirts</h3><div class="stars"></div><div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div></div>
+    <div class="pro-shirt"onclick="window.location.href = 'sproduct.html';"><img src="img/products/f5.jpg" alt=""><p>adidas</p><h3>Cartoon Astronaut T-shirts</h3><div class="stars"></div><div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div></div>
+    <div class="pro-shirt"onclick="window.location.href = 'sproduct.html';"><img src="img/products/f6.jpg" alt=""><p>adidas</p><h3>Cartoon Astronaut T-shirts</h3><div class="stars"></div><div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div></div>
+    <div class="pro-shirt"onclick="window.location.href = 'sproduct.html';"><img src="img/products/f7.jpg" alt=""><p>adidas</p><h3>Cartoon Astronaut T-shirts</h3><div class="stars"></div><div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div></div>
+    <div class="pro-shirt"onclick="window.location.href = 'sproduct.html';"><img src="img/products/f8.jpg" alt=""><p>adidas</p><h3>Cartoon Astronaut T-shirts</h3><div class="stars"></div><div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div></div>
+
+  </section>
+
+  <section class="products-swip">
+    <div class="summer">
+        <h1>Featured Products</h1>
+        <p>Summer Collection New Modern Design</p>
+    </div>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" onclick="window.location.href = 'sproduct.html';">
+                <img src="img/products/f1.jpg" alt="">
+                <p>adidas</p>
+                <h3>Cartoon Astronaut T-shirts</h3>
+                <div class="stars"></div>
+                <div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+            <div class="swiper-slide" onclick="window.location.href = 'sproduct.html';">
+                <img src="img/products/f2.jpg" alt="">
+                <p>adidas</p>
+                <h3>Cartoon Astronaut T-shirts</h3>
+                <div class="stars"></div>
+                <div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+            <div class="swiper-slide" onclick="window.location.href = 'sproduct.html';">
+                <img src="img/products/f3.jpg" alt="">
+                <p>adidas</p>
+                <h3>Cartoon Astronaut T-shirts</h3>
+                <div class="stars"></div>
+                <div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+            <div class="swiper-slide" onclick="window.location.href = 'sproduct.html';">
+                <img src="img/products/f4.jpg" alt="">
+                <p>adidas</p>
+                <h3>Cartoon Astronaut T-shirts</h3>
+                <div class="stars"></div>
+                <div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+            <div class="swiper-slide" onclick="window.location.href = 'sproduct.html';">
+                <img src="img/products/f5.jpg" alt="">
+                <p>adidas</p>
+                <h3>Cartoon Astronaut T-shirts</h3>
+                <div class="stars"></div>
+                <div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+            <div class="swiper-slide" onclick="window.location.href = 'sproduct.html';">
+                <img src="img/products/f6.jpg" alt="">
+                <p>adidas</p>
+                <h3>Cartoon Astronaut T-shirts</h3>
+                <div class="stars"></div>
+                <div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+            <div class="swiper-slide" onclick="window.location.href = 'sproduct.html';">
+                <img src="img/products/f7.jpg" alt="">
+                <p>adidas</p>
+                <h3>Cartoon Astronaut T-shirts</h3>
+                <div class="stars"></div>
+                <div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+            <div class="swiper-slide" onclick="window.location.href = 'sproduct.html';">
+                <img src="img/products/f8.jpg" alt="">
+                <p>adidas</p>
+                <h3>Cartoon Astronaut T-shirts</h3>
+                <div class="stars"></div>
+                <div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".swiper-container", {
+      pagination: {
+          el: '.swiper-pagination', // Added the dot prefix
+          clickable: true, // Optional: make pagination clickable
+      },
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+      },
+  });
+</script>
+
+
+  <!-- End Products -->
+   <!-- start banner -->
+  <section class="banner">
+    <div class="bar">
+      <p class="banner-subtitle">Repair Services</p>
+      <h1 class="banner-title">Up to <span class="highlight">70% off</span> - All t-shirts & Accessories</h1>
+      <a href="shop.html"><button  class="btn">Explore Now</button></a>
+    </div>
+  </section>
+     <!-- end banner -->
+
+  <!-- start products -->
+  <section class="products">
+    <div class="summer">
+    <h1>New Collection</h1>
+    <p>Summer Collection New Modern Design</p></div>
+    <div class="pro-shirt"onclick="window.location.href = 'sproduct.html';"><img src="img/products/f1.jpg" alt="" ><p>adidas</p><h3>Cartoon Astronaut T-shirts</h3><div class="stars"></div><div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div></div>
+    <div class="pro-shirt" onclick="window.location.href = 'sproduct.html';"><img src="img/products/f2.jpg" alt=""><p>adidas</p><h3>Cartoon Astronaut T-shirts</h3><div class="stars"></div><div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div></div>
+    <div class="pro-shirt"onclick="window.location.href = 'sproduct.html';"><img src="img/products/f3.jpg" alt=""><p>adidas</p><h3>Cartoon Astronaut T-shirts</h3><div class="stars"></div><div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div></div>
+    <div class="pro-shirt"onclick="window.location.href = 'sproduct.html';"><img src="img/products/f4.jpg" alt=""><p>adidas</p><h3>Cartoon Astronaut T-shirts</h3><div class="stars"></div><div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div></div>
+    <div class="pro-shirt"onclick="window.location.href = 'sproduct.html';"><img src="img/products/f5.jpg" alt=""><p>adidas</p><h3>Cartoon Astronaut T-shirts</h3><div class="stars"></div><div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div></div>
+    <div class="pro-shirt"onclick="window.location.href = 'sproduct.html';"><img src="img/products/f6.jpg" alt=""><p>adidas</p><h3>Cartoon Astronaut T-shirts</h3><div class="stars"></div><div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div></div>
+    <div class="pro-shirt"onclick="window.location.href = 'sproduct.html';"><img src="img/products/f7.jpg" alt=""><p>adidas</p><h3>Cartoon Astronaut T-shirts</h3><div class="stars"></div><div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div></div>
+    <div class="pro-shirt"onclick="window.location.href = 'sproduct.html';"><img src="img/products/f8.jpg" alt=""><p>adidas</p><h3>Cartoon Astronaut T-shirts</h3><div class="stars"></div><div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div></div>
+
+  </section>
+  <section class="products-swip">
+    <div class="summer">
+        <h1>New Collection</h1>
+        <p>Summer Collection New Modern Design</p>
+    </div>
+
+    <div class="swiper-container swiper-container-first">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" onclick="window.location.href = 'sproduct.html';">
+                <img src="img/products/n1.jpg" alt="">
+                <p>adidas</p>
+                <h3>Cartoon Astronaut T-shirts</h3>
+                <div class="stars"></div>
+                <div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+            <div class="swiper-slide" onclick="window.location.href = 'sproduct.html';">
+                <img src="img/products/n2.jpg" alt="">
+                <p>adidas</p>
+                <h3>Cartoon Astronaut T-shirts</h3>
+                <div class="stars"></div>
+                <div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+            <div class="swiper-slide" onclick="window.location.href = 'sproduct.html';">
+                <img src="img/products/n3.jpg" alt="">
+                <p>adidas</p>
+                <h3>Cartoon Astronaut T-shirts</h3>
+                <div class="stars"></div>
+                <div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+            <div class="swiper-slide" onclick="window.location.href = 'sproduct.html';">
+                <img src="img/products/n4.jpg" alt="">
+                <p>adidas</p>
+                <h3>Cartoon Astronaut T-shirts</h3>
+                <div class="stars"></div>
+                <div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+            <div class="swiper-slide" onclick="window.location.href = 'sproduct.html';">
+                <img src="img/products/n5.jpg" alt="">
+                <p>adidas</p>
+                <h3>Cartoon Astronaut T-shirts</h3>
+                <div class="stars"></div>
+                <div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+            <div class="swiper-slide" onclick="window.location.href = 'sproduct.html';">
+                <img src="img/products/n6.jpg" alt="">
+                <p>adidas</p>
+                <h3>Cartoon Astronaut T-shirts</h3>
+                <div class="stars"></div>
+                <div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+            <div class="swiper-slide" onclick="window.location.href = 'sproduct.html';">
+                <img src="img/products/n7.jpg" alt="">
+                <p>adidas</p>
+                <h3>Cartoon Astronaut T-shirts</h3>
+                <div class="stars"></div>
+                <div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+            <div class="swiper-slide" onclick="window.location.href = 'sproduct.html';">
+                <img src="img/products/n8.jpg" alt="">
+                <p>adidas</p>
+                <h3>Cartoon Astronaut T-shirts</h3>
+                <div class="stars"></div>
+                <div class="money">78$ <i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".swiper-container-first", {
+      pagination: {
+          el: '.swiper-pagination', // Added the dot prefix
+          clickable: true, // Optional: make pagination clickable
+      },
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+      },
+  });
+</script>
+
+
+<!-- end products -->
+
+<!-- start crazy -->
+<section class="crazy">
+  <div class="summer-collection">
+    <div class="first-summer">
+      <p>Crazy deals</p>
+      <h1>Buy 1 Get 1 Free</h1>
+      <p>The best classic dress is on sale at cara</p>
+      <button>Learn More</button>
+    </div>
+    <div class="second-summer">
+      <p>spring/summer</p>
+      <h1>up comming season</h1>
+      <p>The best classic dress is on sale at cara</p>
+      <button>Collection</button>
+    </div>
+  </div>
+
+</section>
+<!-- end crazy -->
+
+ <!-- start crazy-2 -->
+<section class="crazy-2">
+  <div class="sale-collection">
+    <div class="one-img">
+      <h1>SEASONAL SALE</h1>
+      <p>Winter collection - 50% off</p>
+    </div>
+    <div class="two-img">
+      <h1>NEW FOOTWEAR COLLECTION</h1>
+      <p>Spring / Summer 2022</p>
+    </div>
+    <div class="three-img">
+      <h1>T-shirt</h1>
+      <p>New Tredny printe</p>
+    </div>
+  </div>
+</section>
+<!-- end crazy-2 -->
+
+ <!-- start news-letter -->
+<section class="news-letter">
+  <div class="letter">
+    <h1>Sign Up For Newsletters</h1>
+    <p>Get E-mail updates about our latest shop and <span> special offer</span></p>
+  </div>
+  <div class="sign"><input type="text" placeholder="Your email address">
+  <button>Sign Up</button></div>
+  
+  
+</section>
+ <!-- end news-letter -->
+
+<!-- start footer -->
+<footer>
+  <div class="col">
+    <div class="col-1">
+    <img src="img/logo.png" alt="">
+    <p><span>contact</span></p>
+    <p><span>Address:</span> Dessouk ,Kafr El-Sheikh</p>
+    <p><span>Phone:</span> 01272808556</p>
+    <p><span>Hours:</span> All The Day</p>
+    <span>Follow Us</span>
+    <div class="font">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-whatsapp"></i></div>
+  </div>
+  <div class="col-2">
+    <span>About</span>
+    <p>About Us</p>
+    <p>Delivery information</p>
+    <p>Privacy Policy</p>
+    <p>Terms & Conditions</p>
+    <p>Contact Us</p>
+  </div>
+  <div class="col-3">
+    <span>My Account</span>
+    <p>Sign In</p>
+    <p>View Cart</p>
+    <p>My Wishlist</p>
+    <p>Track My order</p>
+    <p>Help</p>
+  </div>
+  <div class="col-4">
+    <span>Install App</span>
+    <p>From App Store of Google Play</p>
+    <button><img src="img/pay/app.jpg" alt=""></button>
+    <button><img src="img/pay/play.jpg" alt=""></button>
+    <p>Secured Payments Gateways</p>   
+    <img src="img/pay/pay.png" alt=""> 
+  </div>
+
+</div>
+
+
+<div class="created"><h1>© 2024 Created By <span>7fno</span> </h1></div>
+  
+
+
+</footer>
+<!-- end footer -->
+
+
+
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/contact.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"  />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet"> 
+    <title>Ecommerece</title>
+</head>
+<body>
+  <!-- start Header -->
+
+  <section class = 'header'>
+    <a href="index.html"><img src="img/logo.png" alt=""></a>
+    <ul class="navbar">
+      <a  class ='close' ><i class="fa-solid fa-x"></i></a>
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">contact</a></li>
+      <li class="cart"><a href="cart.html"><i class="fa-duotone fa-solid fa-bag-shopping"></i>
+        <span class="cart-count">3</span>
+      </a></li>
+      
+
+  </ul>
+  <div class="mobile">
+    
+    <i class= 'fas fa-outdent'></i>
+    <a class="cart" href="cart.html"><i class="fa-duotone fa-solid fa-bag-shopping"></i>
+     <span class="cart-count">3</span>
+   </a></li>
+    
+   </div>
+    
+
+  </section>
+
+  <section class="hero">
+    <h2>#Let's_Talk</h2>
+    <p>LEAVE A MESSAGE , we love to her from you!</p>
+  </section>
+
+
+<section class="contact">
+    <div class="write">
+     <p>GET IN TOUCH</p>
+     <h1>Visit one of our Agencies Locations or Contact Us Today</h1>
+     <h4>Head office</h4>
+     <div class="icons">
+      <div class="icon">
+        <i class="fa-regular fa-map"></i>
+        <h2>16 School Street</h2>
+      </div>
+      <div class="icon">
+        <i class="fa-solid fa-message"></i>
+        <h2>melhefnawy718@gmail.com</h2>
+      </div>
+      <div class="icon">
+        <i class="fa-solid fa-phone"></i>
+        <h2>01272808556</h2>
+      </div>
+      <div class="icon">
+        <i class="fa-solid fa-clock"></i>
+        <h2>ALL Days</h2>
+      </div>
+     </div>
+    </div>
+     <div class="map">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253.8305974442035!2d30.646244113232598!3d31.13407557151128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f65b0d3ffa59bb%3A0x492dc14ca6f9c613!2z2K_Ys9mI2YLYjCDZg9mB2LEg2KXYqNix2KfZh9mK2YXYjCDZgtiz2YUg2K_Ys9mI2YLYjCDZhdit2KfZgdi42Kkg2YPZgdixINin2YTYtNmK2K4!5e0!3m2!1sar!2seg!4v1728719071134!5m2!1sar!2seg"
+          width="600" height="450" 
+          style="border:0;" allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div>
+ </section>
+ 
+
+ <section class="connection">
+
+  <div class="connections">
+    <p>Leave A Message</p>
+    <h2>We Love To Hear From You</h2>
+    <input type="text" placeholder="Your Name">
+    <input type="text" placeholder="E-mail">
+    <input type="text" placeholder="Subject">
+    <textarea name="" id="" placeholder="Your Message"></textarea>
+    <button id="submit-btn">Submit</button>
+  </div>
+  <div class="people">
+    <div class="person">
+      <img src="img/people/1.png" alt="">
+      <div class="text">
+        <h4>Joe Doe</h4>
+        <p>Senior Marketing Manager</p>
+        <p>Phone : 01272808556</p>
+        <p>Email :  melhefnawy718@gmail.com</p>
+      </div>
+    </div>
+      <div class="person">
+        <img src="img/people/2.png" alt="">
+        <div class="text">
+          <h4>Joe Doe</h4>
+          <p>Senior Marketing Manager</p>
+          <p>Phone : 01272808556</p>
+          <p>Email :  melhefnawy718@gmail.com</p>
+        </div>
+      </div>
+        <div class="person">
+          <img src="img/people/3.png" alt="">
+          <div class="text">
+            <h4>Fathy Abd Elwhab</h4>
+            <p>Senior Marketing Manager</p>
+            <p>Phone : 01272808556</p>
+            <p>Email :  melhefnawy718@gmail.com</p>
+          </div>
+    </div>
+  </div>
+ </section>
+
+
+ <script>
+  const Toast = Swal.mixin({
+    toast: true,
+    position: "top-end",
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    customClass: {
+      container: 'custom-toast-position'
+    },
+    didOpen: (toast) => {
+      toast.onmouseenter = Swal.stopTimer;
+      toast.onmouseleave = Swal.resumeTimer;
+    }
+  });
+
+  document.getElementById('submit-btn').addEventListener('click', function(event) {
+    event.preventDefault(); // Optional: Prevent default form submission
+    Toast.fire({
+      icon: 'success',
+      title: 'Message sent successfully!'
+    });
+  });
+</script>
+
+
+
+  
+
+  <section class="news-letter">
+    <div class="letter">
+      <h1>Sign Up For Newsletters</h1>
+      <p>Get E-mail updates about our latest shop and <span> special offer</span></p>
+    </div>
+    <div class="sign"><input type="text" placeholder="Your email address">
+    <button>Sign Up</button></div>
+    
+    
+  </section>
+   <!-- end news-letter -->
+  
+  <!-- start footer -->
+  <footer>
+    <div class="col">
+      <div class="col-1">
+      <img src="img/logo.png" alt="">
+      <p><span>contact</span></p>
+      <p><span>Address:</span> Dessouk ,Kafr El-Sheikh</p>
+      <p><span>Phone:</span> 01272808556</p>
+      <p><span>Hours:</span> All The Day</p>
+      <span>Follow Us</span>
+      <div class="font">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-whatsapp"></i></div>
+    </div>
+    <div class="col-2">
+      <span>About</span>
+      <p>About Us</p>
+      <p>Delivery information</p>
+      <p>Privacy Policy</p>
+      <p>Terms & Conditions</p>
+      <p>Contact Us</p>
+    </div>
+    <div class="col-3">
+      <span>My Account</span>
+      <p>Sign In</p>
+      <p>View Cart</p>
+      <p>My Wishlist</p>
+      <p>Track My order</p>
+      <p>Help</p>
+    </div>
+    <div class="col-4">
+      <span>Install App</span>
+      <p>From App Store of Google Play</p>
+      <button><img src="img/pay/app.jpg" alt=""></button>
+      <button><img src="img/pay/play.jpg" alt=""></button>
+      <p>Secured Payments Gateways</p>   
+      <img src="img/pay/pay.png" alt=""> 
+    </div>
+  
+  </div>
+  
+  
+  <div class="created"><h1>© 2024 Created By <span>7fno</span> </h1></div>
+    
+  
+  
+  </footer>
+  <!-- end footer -->
+  
+  
+  <script src="JS/script.js"></script>
+
+
+  </body>
+  </html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/cart.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"  />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet"> 
+    <title>Ecommerece</title>
+</head>
+<body>
+  <!-- start Header -->
+
+  <section class = 'header'>
+    <a href="index.html"><img src="img/logo.png" alt=""></a>
+    <ul class="navbar">
+      <a  class ='close' ><i class="fa-solid fa-x"></i></a>
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">contact</a></li>
+      <li class="cart" class="active"><a href="cart.html"><i class="fa-duotone fa-solid fa-bag-shopping"></i>
+        <span class="cart-count">3</span>
+      </a></li>
+      
+
+  </ul>
+  <div class="mobile">
+    
+    <i class= 'fas fa-outdent'></i>
+    <a class="cart" href="cart.html"><i class="fa-duotone fa-solid fa-bag-shopping"></i>
+     <span class="cart-count">3</span>
+   </a></li>
+    
+   </div>
+    
+
+  </section>
+
+  <section class="hero">
+    <h2>#Cart</h2>
+    <p>ADD YOUR COPON CODE , Save up to 70%!</p>
+  </section>
+
+
+  <section class='products'>
+    <table>
+        <thead>
+            <tr>
+                <td>Remove</td>
+                <td>Image</td>
+                <td>Product</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td>SubTotal</td>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><i class="fa-solid fa-x"></i></td>
+                <td><img src="img/products/f1.jpg" alt=""></td>
+                <td>Cartoon Astronaut T-shirt</td>
+                <td>$118.19</td>
+                <td><input type="number" min="1"  value="1"></td>
+                <td>$118.19</td>
+            </tr>
+            <tr>
+                <td><i class="fa-solid fa-x"></i></td>
+                <td><img src="img/products/f2.jpg" alt=""></td>
+                <td>Cartoon Astronaut T-shirt</td>
+                <td>$118.19</td>
+                <td><input type="number" min="1"  value="1"></td>
+                <td>$118.19</td>
+            </tr>
+            <tr>
+                <td><i class="fa-solid fa-x"></i></td>
+                <td><img src="img/products/f3.jpg" alt=""></td>
+                <td>Cartoon Astronaut T-shirt</td>
+                <td>$118.19</td>
+                <td><input type="number" min="1"  value="1"></td>
+                <td>$118.19</td>
+            </tr>
+        </tbody>
+    </table>
+  </section>
+
+
+  <section class="Copoun">
+    <div class="apply">
+        <h2>Apply Copoun</h2>
+        <div class="enter">
+            <input type="text" placeholder="Enter Your Copoun">
+            <button id="apply-btn">Apply</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Cart Totals</h2>
+      <table>
+        <thead>
+          <tr>
+            <td>
+              Cart SubTotal
+            </td>
+            <td>
+              Shipping
+            </td>
+            <td>
+              Total
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>$ 335</td>
+            <td>Free</td>
+            <td>$ 335</td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="check-btn">Proceed To CheckOut</button>
+    </div>
+  </section>
+
+  <script>
+    const toast = Swal.mixin({
+      toast: true,
+      position: "top-end",
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      customClass: {
+        container: 'custom-toast-position'
+      },
+      didOpen: (toast) => {
+        toast.onmouseenter = Swal.stopTimer;
+        toast.onmouseleave = Swal.resumeTimer;
+      }
+    });
+  
+    document.getElementById('apply-btn').addEventListener('click', function(event) {
+      event.preventDefault(); // Optional: Prevent default form submission
+      toast.fire({
+        icon: 'success',
+        title: '30% discount added'
+      });
+    });
+  </script>
+
+<script>
+  const Toast = Swal.mixin({
+    toast: true,
+    position: "top-end",
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    customClass: {
+      container: 'custom-toast-position'
+    },
+    didOpen: (toast) => {
+      toast.onmouseenter = Swal.stopTimer;
+      toast.onmouseleave = Swal.resumeTimer;
+    }
+  });
+
+  document.getElementById('apply-btn').addEventListener('click', function(event) {
+    event.preventDefault(); 
+    Toast.fire({
+      icon: 'error',
+      title: 'The Copon is Wrong'
+    });
+  });
+</script>
+
+
+<script>
+  const check = Swal.mixin({
+    toast: true,
+    position: "top-end",
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    customClass: {
+      container: 'custom-toast-position'
+    },
+    didOpen: (toast) => {
+      toast.onmouseenter = Swal.stopTimer;
+      toast.onmouseleave = Swal.resumeTimer;
+    }
+  });
+
+  document.getElementById('check-btn').addEventListener('click', function(event) {
+    event.preventDefault(); // Optional: Prevent default form submission
+    check.fire({
+      icon: 'success',
+      title: 'Checked Out'
+    });
+  });
+</script>
+ 
+
+ 
+ 
+
+  
+
+ 
+   <!-- end news-letter -->
+  
+  <!-- start footer -->
+  <footer>
+    <div class="col">
+      <div class="col-1">
+      <img src="img/logo.png" alt="">
+      <p><span>contact</span></p>
+      <p><span>Address:</span> Dessouk ,Kafr El-Sheikh</p>
+      <p><span>Phone:</span> 01272808556</p>
+      <p><span>Hours:</span> All The Day</p>
+      <span>Follow Us</span>
+      <div class="font">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-whatsapp"></i></div>
+    </div>
+    <div class="col-2">
+      <span>About</span>
+      <p>About Us</p>
+      <p>Delivery information</p>
+      <p>Privacy Policy</p>
+      <p>Terms & Conditions</p>
+      <p>Contact Us</p>
+    </div>
+    <div class="col-3">
+      <span>My Account</span>
+      <p>Sign In</p>
+      <p>View Cart</p>
+      <p>My Wishlist</p>
+      <p>Track My order</p>
+      <p>Help</p>
+    </div>
+    <div class="col-4">
+      <span>Install App</span>
+      <p>From App Store of Google Play</p>
+      <button><img src="img/pay/app.jpg" alt=""></button>
+      <button><img src="img/pay/play.jpg" alt=""></button>
+      <p>Secured Payments Gateways</p>   
+      <img src="img/pay/pay.png" alt=""> 
+    </div>
+  
+  </div>
+  
+  
+  <div class="created"><h1>© 2024 Created By <span>7fno</span> </h1></div>
+    
+  
+  
+  </footer>
+  <!-- end footer -->
+  
+  
+  <script src="JS/script.js"></script>
+
+
+  </body>
+  </html>
